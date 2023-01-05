@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/aos.css">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+
+      transition: 0.5s;
+    }
+
+    .bg .title {
+      text-align: center;
+
+      position: relative;
+      top: 70px;
+
+    }
+
+    .bg {
+
+      margin: 0;
+      padding: 0;
+
+      background-position: center;
+
+      height: 5200px;
+      background: url(./img/journez-home-bg.jpg) no-repeat center/cover;
+
+
+
+
+
+
+
+    }
+
+    .title {
+      color: white;
+      font-size: 30px;
+    }
+
+    a {
+
+      text-decoration: none;
+    }
+
+    .container {
+      width: 60%;
+      margin: auto;
+      font-size: 10px;
+      text-align: left;
+      display: block;
+    }
+
+    .title img {
+      width: 400px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      font-size: 30px;
+      color: white;
+
+    }
+
+    .col {
+      width: 31.33%;
+
+      margin: 1%;
+
+
+    }
+
+    @media (max-width: 391px) {
+      * {
+        font-size: 2px;
+      }
+
+
+
+
+
+      .container .last {
+        width: 100%;
+      }
+
+      .container .last2 {
+        width: 100%;
+      }
+
+      .title img {
+        width: 200px;
+      }
+
+      .readmore,
+      .seemore {
+        font-size: 40px;
+      }
+
+      .pic1,
+      .pic2,
+      .pic3 {
+        height: 50%;
+      }
+
+      .bon {
+
+        width: 100%;
+
+      }
+
+      .col {
+        width: 100%;
+        height: 50%;
+
+      }
+
+      .content1 .bon {
+        width: 100%;
+
+
+      }
+
+      .content1 .con {
+        width: 100%;
+
+      }
+
+      .container .offer {
+        width: 120%;
+        margin: auto;
+
+      }
+
+      .container .graycontent {
+        width: 100%;
+
+      }
+
+
+
+      .container .office {
+        width: 100%
+      }
+
+      .container .whites {
+        width: 100%;
+      }
+
+      .last {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+      }
+
+
+
+      .container .office1 {
+        width: 100%;
+      }
+
+      .container .animate1,
+      .container .animate2,
+      .container .animate3,
+      .container .animate4 {
+
+        width: 100%;
+
+
+      }
+
+    }
+
+    @media (min-width:391px) and (max-width: 768px) {
+      .container .office {
+        width: 100%
+      }
+
+      * {
+        font-size: 14px;
+      }
+
+
+
+      .container .animate1,
+      .container .animate2,
+      .container .animate3,
+      .container .animate4 {
+
+        width: 25%;
+
+
+      }
+
+      .container .animate2 {
+        border-radius: 50px;
+      }
+
+      .title img {
+        width: 350px;
+      }
+
+      .content1 .bon {
+        width: 100%;
+
+      }
+
+      .content1 .con {
+        width: 100%;
+      }
+
+      .container1 {
+        width: 100%;
+
+      }
+
+      .container1 .row {
+        width: 90%;
+        margin: auto;
+      }
+
+      .pic1,
+      .pic2,
+      .pic3 {
+        width: 100%;
+      }
+
+      .container .offer {
+        width: 120%;
+        margin: auto;
+
+      }
+
+      .container .graycontent {
+        width: 100%;
+
+      }
+
+
+    }
+
+
+
+    .big {
+      font-size: 40px;
+      text-align: left;
+
+      color: white;
+    }
+
+    .content1 {
+      display: flex;
+
+      text-align: left;
+
+      flex-direction: column-reverse;
+
+      align-items: flex-end;
+      width: 100%;
+
+
+    }
+
+    .bon {
+      width: 50%;
+
+
+    }
+
+    .con {
+      width: 55%;
+      color: yellow;
+      position: relative;
+      left: -50px;
+
+
+
+    }
+
+    .pic1 {
+      background: url(./img/journez-tour-1.jpg) no-repeat center/cover;
+    }
+
+    .pic2 {
+      background: url(./img/journez-tour-2.jpg)no-repeat center/cover;
+    }
+
+    .pic3 {
+      background: url(./img/journez-tour-3.jpg) no-repeat center/cover;
+    }
+
+    .readmore {
+      width: 200px;
+      height: 50px;
+      background: yellow;
+      border-radius: 30px;
+
+      font-size: 20px;
+      color: black;
+      text-align: center;
+      line-height: 2.5;
+
+
+    }
+
+    .readmore:hover {
+      background: black;
+      color: yellow;
+
+    }
+
+    .h1 {
+      color: white;
+    }
+
+    .middletop {
+      text-align: center;
+      width: 40%;
+    }
+
+    .textc {
+      text-align: center;
+    }
+
+    .row {
+      width: 60%;
+
+    }
+
+    .col p {
+      color: yellow
+    }
+
+    .container1 {
+      width: 60%;
+      margin: auto;
+      display: flex;
+
+
+
+      flex-direction: column;
+
+
+      width: 100%;
+    }
+
+    .seemore {
+      width: 250px;
+      height: 50px;
+      background: yellow;
+      border-radius: 30px;
+
+      font-size: 20px;
+      color: black;
+      text-align: center;
+      line-height: 2.5;
+      text-decoration: none;
+      margin: auto;
+
+    }
+
+    .seemore:hover {
+      background: black;
+      color: yellow;
+
+    }
+
+    .content3 {
+      display: flex;
+
+      text-align: left;
+
+      flex-direction: column-reverse;
+
+      align-items: flex-end;
+      width: 100%;
+    }
+
+    .content2 {
+      display: flex;
+
+      text-align: left;
+
+      flex-direction: column-reverse;
+
+      align-items: flex-end;
+      width: 100%;
+    }
+
+    .offer {
+      width: 50%;
+      color: white;
+      font-size: 20px;
+
+    }
+
+    .offer p {
+      font-size: 30px;
+      color: yellow;
+    }
+
+    .gray {
+      text-align: left;
+      color: gray;
+      font-size: 60px;
+    }
+
+    .graycontent {
+      width: 50%;
+      color: gray;
+      font-size: 20px;
+    }
+
+    .graycontent img {
+      border-radius: 50%;
+    }
+
+    .lineheight {
+      line-height: 2.5;
+      font-size: 30px;
+    }
+
+    .bottom-top {
+      text-align: center;
+      color: white;
+      font-size: 20px;
+    }
+
+    .yellow {
+      color: yellow;
+    }
+
+    .last {
+      width: 25%;
+    }
+
+    .last2 {
+      width: 75%;
+    }
+
+    .white {
+      color: white;
+      font-size: 40px;
+    }
+
+    .whites {
+      color: white;
+      font-size: 18px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      flex-wrap: wrap;
+
+    }
+
+    .office {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+    .office1 {
+      width: 50%;
+      display: flex;
+
+    }
+
+    .circle1 {
+      width: 50px;
+      height: 50px;
+      background: #000;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 3;
+      margin: auto;
+    }
+
+    .circle1:hover {
+      background: yellow;
+
+    }
+
+    a:hover {
+      color: black;
+    }
+
+    .animate {
+      display: flex;
+    }
+
+    .bigs {
+      font-size: 40px;
+    }
+
+    .animate {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .animate1 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: black;
+      text-align: center;
+      line-height: 1.5;
+      width: 25%;
+
+
+    }
+
+    .animate2 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: yellow;
+      text-align: center;
+      line-height: 1.5;
+      width: 25%;
+    }
+
+    .animate3 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: black;
+      text-align: center;
+      line-height: 1.5;
+      width: 25%;
+
+    }
+
+    .animate4 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: black;
+      text-align: center;
+      line-height: 1.5;
+      width: 25%;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://kit.fontawesome.com/0e51c10055.js" crossorigin="anonymous"></script>
+  <div class="bg">
+    <div class="title"><img src="./img/journez-home-text.png" alt=""><br><br> WE PROVIDE BEST GUIDANCE
+      <br><br><br><br><br><a href="#">V</a><br><br><br><br><br>
+      <br><br>
+      <div class="container">
+        <h1 data-aos="slide-down" data-aos-duration="1000" data-aos-once="false" data-aos-offset="120" class="big"> What
+          do You Know <br> About Us</h1>
+        <div class="content1"><br><br><br><br><br><br><br>
+
+          <div class="bon">
+            <br>Journez is a tour agency, specializing in organizing tours to all destinations. We are happy to make
+            your holidays unforgettable and amazing! Our agents are experts in finding you the most comfortable and
+            interesting place for you to have breathtaking holidays.
+          </div>
+          <br><br>
+          <div class="con">
+            <p>Select the country you’d like to visit and provide our agents with estimated time – they’ll find and
+              offer the most suitable tours and hotels.</p>
+          </div>
+          <br><br>
+          <div class="bon">
+            During our work we organized countless journeys for our clients. We started as a small tour bureau, and soon
+            we expanded our offers list. Today we have valuable experience travelling and we can advise the most
+            stunning resorts, cities and countries to visit!
+          </div>
+
+        </div>
+        <div class="readmore ">
+          <a href="#"> READ &nbsp; MORE </a>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <br><br><br> <br><br><br> <br><br><br>
+    <div class="container1">
+      <br><br><br><br><br><br>
+      <h1 data-aos="slide-down" data-aos-duration="1000" data-aos-once="false" data-aos-offset="12" class="big textc">
+        Find Out Most Popular <br> Destinations</h1>
+      <div class="row">
+        <div class="col">
+          <div class="pic1"><br><br><br><br><br><br><br> Canada Tours <br>
+            <p> ★★★★★</p>$ 1500+<br><br>
+          </div>
+        </div>
+        <div class="col">
+          <div class="pic2"><br><br><br><br><br><br> <br>Europe Tours <br>
+            <p> ★★★★★</p>$ 1000+<br><br>
+          </div>
+        </div>
+        <div class="col">
+          <div class="pic3"><br><br><br><br><br><br><br> Asia &nbsp;Tours <br>
+            <p> ★★★★★</p>$ 2500+<br><br>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="seemore">
+        <a href="#">SEE &nbsp; MORE&nbsp;TOURS</a>
+      </div>
+      <br><br><br><br><br><br><br>
+      <div class="container">
+        <h1 data-aos="slide-up" data-aos-duration="1000" data-aos-once="false" data-aos-offset="120" class="big">What
+          Can We <br> Offer for You</h1>
+        <div class="content2">
+          <div class="offer p">
+            <p>Various Destinations</p><br> We offer a great number of tours to different destinations. You have a wide
+            selection of places to visit with us!
+          </div>
+          <div class="offer p">
+            <p>Everything is Included</p><br>No worries from your side! We take care of air flights, hotel booking,
+            transfer and other travelling details!
+          </div>
+          <div class="offer p">
+            <p>Affordable Prices</p><br>There are various price categories for different tours in our agency.Either
+            student or businessman can afford a journey!
+          </div>
+        </div>
+      </div>
+      <br><br><br> <br><br><br> <br><br><br>
+      <div class="container">
+        <div class="animate">
+          <h1 data-aos="slide-left" data-aos-duration="1000" data-aos-once="false" data-aos-offset="12"
+            class="animate1 yellow bigs">2560
+
+            <p class="whites">PLACES TO VISIT</p>
+          </h1>
+
+          <h1 class=" black bigs animate2">3065
+            <p class="whites">HOTELS TO STAY</p>
+          </h1>
+
+          <h1 data-aos="slide-right" data-aos-duration="1000" data-aos-once="false" data-aos-offset="12"
+            class="yellow bigs animate3">6,800
+            <p class="whites">REPEAT VISITORS</p>
+          </h1>
+
+          <h1 data-aos="slide-right" data-aos-duration="1000" data-aos-once="false" data-aos-offset="12"
+            class="yellow bigs animate4">100%
+            <p class="whites">SAFE & SECURE</p>
+          </h1>
+        </div>
+      </div>
+
+      <div class="animation">
+        <br> <br><br> <br><br> <br><br><br><br> <br> <br><br><br>
+      </div>
+      <div class="container">
+        <h1 class="gray">Take a Look What <br> Clients Says</h1>
+        <br><br> <br><br> <br><br> <br>
+        <div class="content3">
+          <div class="graycontent big lineheight">
+            <img src="./img/journez-testi-1.jpg" alt="">
+            - Georgia Humphreys
+          </div>
+          <br><br> <br><br> <br><br> <br>
+          <div class="graycontent p">
+            I’m very satisfied with the service and our wonderful journey. Me and my husband visited Europe and saw so
+            many
+            famous cities! We had no worries with the transfer, hotels and other stuff - we just had a wonderful rest!
+            Journez are true professionals and they indeed know their business. Thank you!
+          </div>
+
+        </div>
+        <div class="bottom-top">
+          <h1 class="white">Speak to our expert at</h1>
+          <h2 class="yellow">1-800-453-6744</h2>
+          <div class="seemore ">
+            <a href="#">BROWSE &nbsp; ALL&nbsp;TOURS</a>
+
+          </div>
+        </div>
+      </div>
+      <br><br><br> <br><br><br> <br><br><br>
+      <br>
+      <br><br>
+      <div class="container">
+        <h1 class="white">Let’s Get in Touch</h1>
+        <div class="footer ">
+
+
+          <div class="office">
+            <div class="last">
+              <h1 class="fa-solid fa-map yellow big"></h1>
+            </div>
+            <div class="last2">
+              <p class="whites"> <br> Visit our Office:<br>
+                Glasgow, 4578 Marmora Road</p>
+            </div>
+          </div>
+          <div class="office">
+            <div class="last">
+              <h1 class="fa-solid fa-phone yellow big "></h1>
+            </div>
+            <div class="last2">
+              <p class="whites">Call Us: <br>
+                Don’t hesitate to contact us via phones:<br> (719) 445-2808; (719) 445-2809</p>
+            </div>
+          </div>
+          <div class="office">
+            <div class="last">
+              <h1 class="fa-solid fa-square-envelope big yellow"></h1>
+            </div>
+            <div class="last2">
+              <p class="whites">Use Contact Form:
+                Fill in the fields in Contact Form and ask questions you are interested in.</p>
+            </div>
+          </div>
+
+          <div class="office1">
+            <div class="circle1 whites"> <a href="#" class="fa-solid fa-info whites "></a></div>
+            <div class="circle1 whites"> <a href="#" class="fa-brands fa-twitter whites"></a></div>
+            <div class="circle1 whites"> <a href="#" class="fa-brands fa-facebook whites"></a></div>
+            <div class="circle1 whites"> <a href="#" class="fa-brands fa-instagram whites"></a></div>
+          </div>
+
+        </div>
+      </div>
+      <br><br><br><br> <br><br><br> <br><br><br> <br><br><br>
+      <div class="end textc whites p">
+        © 2018 Journez. All rights reserved. Terms and Conditions. Privacy Policy
+      </div>
+
+    </div>
+
+    <script src="./js/aos.js"></script>
+
+</body>
+<script>
+  AOS.init();
+</script>
+
+</html>
